@@ -1,0 +1,98 @@
+<h3 class="jumbotron"><b >New Ticket</b></h3><br/>
+
+
+<form ngNativeValidate #f="ngForm" (ngSubmit)="onFormSubmit(f)" >
+
+        <!-- <div class="dropdown">
+                <button (click)=" getALLcategory()" class="dropbtn">Categories</button>
+                <div id="myDropdown" class="dropdown-content">
+
+                        <select>
+                                <option ng-repeat="c in  allTickets">{{Category}}</option>
+                                </select>
+                                 
+                     <select><option>  <a href="#">Link 1</a></option>
+                
+                 <option> <a href="#">Link 2</a></option>
+                 <option> <a href="#">Link 3</a></select> -->
+                <!-- </div>
+              </div>
+
+<br/>
+<br/>
+<br/> --> 
+    
+    
+    
+    
+    EmployeeID:<input [(ngModel)]="newTicket.EmpId" name="TEId" type="text" class="form-control" />
+    
+    <br/><br/>
+
+
+    <!-- sub Category:<input [(ngModel)]="newTicket.Name" name="Tname" type="text" class="form-control"/><br/><br/> -->
+
+<!--    
+    <div style="text-align:center;width:500px;">
+            <h1>
+                {{Sc}}
+            </h1>
+        
+            <div style="float:left;padding:10px;margin:0 auto;" *ngIf="newTicket">
+               <select [(ngModel)]="newTicket.Sc">
+                    <option *ngFor="let b of newTicket" [(ngValue)]="b.Sc">
+                    <a [routerLink]="['/admin/Ticket',p.id]" >{{b.Sc}}</a>
+                </option>
+                </select>
+        
+                <p>{{ selected }}</p> -->
+            <!-- </div>
+        </div>
+        -->
+            
+ 
+        <!-- <select ng-model="">
+                <option ng-repeat="x in cars" value="{{x.model}}">{{x.model}}</option>
+              </select> -->
+
+
+    
+<br/>
+Title:<input [(ngModel)]="newTicket.Title" name="TT" type="text" class="form-control"/><br/><br/>
+<!-- Sub Category:<input [(ngModel)]="newTicket.Scid" name="TT" type="text" class="form-control"/><br/><br/> -->
+Sub Category:<select [(ngModel)]="newTicket.Scid" name="TT"class="form-control" >
+        <option value="SCAT1">LOGIN</option>
+        <option value="SCAT2">INSTALL</option>
+        <option value="SCAT3">SLOW</option>
+        <option value="SCAT4">KEYBOARD</option>
+        <option value="SCAT5">CAMERA</option>
+        <option value="SCAT6">TOUCH SCREEN</option>
+        <option value="SCAT7">OTHER</option>
+</select>
+<br/><br/>
+Description:<input [(ngModel)]="newTicket.Description" name="TDescription" type="text" class="form-control"/><br/><br/>
+    
+    
+
+<button class="btn btn-success"  >
+        Add
+        <span class="glyphicon glyphicon-plus-sign "></span>
+    </button>
+    
+        
+    
+
+
+</form>
+<div >
+        <h3>{{ticketraised.message}}</h3>
+        <h3>{{ticketraised.ticketId}}</h3>
+</div>
+
+       
+    
+<!-- <ul>
+        <li *ngFor ="let p of data">{{p.title}}</li>
+    </ul> -->
+    
+
